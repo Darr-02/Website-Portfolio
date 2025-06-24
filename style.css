@@ -28,7 +28,7 @@ nav{
     justify-content: space-between;
     border-bottom: 1px solid var(--primary);
     background-color: rgba(1, 1, 1, 0.8);
-    padding: 1.5rem 5%;
+    padding: 20px 5%;
     position: fixed;
     top: 0;
     left: 0;
@@ -59,6 +59,14 @@ ul li a{
     margin: 0 1rem;
 }
 
+nav ul li a.active{
+    color: var(--primary);
+}
+
+nav ul li a.active::after{
+    transform: scale(0.5);
+}
+
 ul li a:hover{
     color: var(--primary);
 }
@@ -66,9 +74,10 @@ ul li a:hover{
 ul li a::after{
     content: '';
     display: block;
-    border-bottom: 0.1rem solid var(--primary);
+    border-bottom: 2px solid var(--primary);
     transform: scaleX(0);
     transition: 0.2s linear;
+    
 }
 
 ul li a:hover::after{
@@ -272,11 +281,11 @@ ul li a:hover::after{
 }
 
 .experience-content p.duration {
-  font-size: 0.9em;
-  margin-bottom: 13px;
-  color: var(--black);
-  opacity: 0.8;
-  word-spacing: normal;
+    font-size: 0.9em;
+    margin-bottom: 13px;
+    color: var(--black);
+    opacity: 0.8;
+    word-spacing: normal;
 }
 
 /* Skill section */
@@ -729,6 +738,14 @@ footer .credit a{
         padding: 0.5rem;
         font-size: 2rem;
         row-gap: 2px;
+    }
+
+    nav ul li a.active{
+        color: var(--black);
+    }
+
+    nav ul li a.active::after{
+        transform: scale(0.5);
     }
     nav ul a:hover{
         color: var(--black);
