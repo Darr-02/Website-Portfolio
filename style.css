@@ -59,6 +59,14 @@ ul li a{
     margin: 0 1rem;
 }
 
+nav ul li a.active{
+    color: var(--primary);
+}
+
+nav ul li a.active::after{
+    transform: scale(0.5);
+}
+
 ul li a:hover{
     color: var(--primary);
 }
