@@ -53,6 +53,35 @@ document.addEventListener("click", function(event) {
   }
 });
 
+//active navbar border
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('nav ul li a');
+
+window.addEventListener('scroll', () => {
+  let scrollMiddle = window.scrollY + window.innerHeight / 2;
+  let currentId = "";
+
+  [...sections].reverse().forEach(sec => {
+    let offset = sec.offsetTop;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute('id');
+
+    if (scrollMiddle >= offset && scrollMiddle < offset + height) {
+      currentId = id;
+    }
+  });
+
+  if (currentId === "") {
+    currentId = "home";
+  }
+
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === `#${currentId}`) {
+      link.classList.add('active');
+    }
+  });
+});
 
 const swiper = new Swiper('.swiper', {
   cssMode: true,
