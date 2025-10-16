@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script> <!-- for icon -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script> 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
@@ -39,11 +39,25 @@
         </section>
     </main>
 
-    <section class="about" id="about" >
+    <section class="about" id="about">
         <h2 data-aos="fade-down">About Me</h2>
         <div class="content">
             <div class="image" data-aos="fade-down">
-                <img src="./image/foto.jpg" class="photo">
+                <div class="id-card">
+                    <div class="card-face">
+                        <div class="card-header">
+                            <h4>ID CARD</h4>
+                        </div>
+                        <div class="card-photo">
+                            <img src="./image/myfoto.png" alt="Profile Photo" class="photo">
+                        </div>
+                        
+                        <div class="card-info">
+                            <h5>Darrick Aaron Untarman</h5>
+                            <p>IoT</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="sub-content">
                 <p data-aos="fade-down">I am student at Asia Pacific University and I have strong interest in programming. I enjoy learning new technologies and expand my knowledge. I am eager to develop my technical skills and love to working and communicating with people.</p>
@@ -51,10 +65,18 @@
             </div>
         </div>
 
-        <h3 data-aos="fade-down">Work Experience</h3>
+        <h3 data-aos="fade-down">Experience</h3>
 
         <div class="timeline" data-aos="fade-down">
             <div class="timeline-line"></div>
+            <div class="experience" data-aos="fade-down">
+                <div class="experience-circle" data-aos="fade-down"></div>
+                <div class="experience-content" data-aos="fade-down">
+                    <h4 data-aos="fade-down">Top 10 AWS Hackathon Finalist -- Corporate Track</h4>
+                    <h5 data-aos="fade-down">Great Malaysia AI Hackathon 2025</h5>
+                    <p class="duration" data-aos="fade-down"><i class="ph ph-calendar-dots"></i> October 2025</p>
+                </div>
+            </div>
             <div class="experience" data-aos="fade-down">
                 <div class="experience-circle" data-aos="fade-down"></div>
                 <div class="experience-content" data-aos="fade-down">
@@ -151,6 +173,11 @@
                 <div class="content">
                     <img src="./image/raspberryPi.png" class="skill-img">
                     <h3>Raspberry Pi</h3>
+                    <p>-- Basic --</p>
+                </div>
+                <div class="content">
+                    <img src="./image/yolo.png" class="skill-img" style="width:100px; height:50px;">
+                    <h3>Ultralytics YOLO</h3>
                     <p>-- Basic --</p>
                 </div>
             </div>
