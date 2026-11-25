@@ -3,760 +3,475 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darrick Aaron Untarman — IoT & Systems Engineer</title>
-    <meta name="description" content="IoT Engineer building intelligent systems at the intersection of embedded hardware, robotics, cloud computing, and applied AI.">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-
-    <!-- Phosphor Icons -->
-    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
-
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
-
-    <!-- ═══════════════════════════════════════
-         NAVIGATION
-    ═══════════════════════════════════════ -->
-    <nav id="navbar">
-        <a href="#home" class="nav-logo">
-            <span class="nav-logo-mono">DAU</span>
-        </a>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#expertise">Expertise</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="nav-actions">
-            <a href="./download_file/Darrick_Aaron_Untarman_Resume.pdf" download class="nav-resume">
-                <i class="ph ph-download-simple"></i> Resume
+    <nav>
+        <a href="#home" class="name">Portfolio</a>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        <div class="navbar-extra">
+            <a id="menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </a>
-            <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
         </div>
     </nav>
 
-    <!-- ═══════════════════════════════════════
-         HERO
-    ═══════════════════════════════════════ -->
-    <main class="hero" id="home">
-        <div class="hero-grid-overlay" aria-hidden="true"></div>
-
-        <div class="hero-inner">
-            <div class="hero-meta">
-                <span class="mono tag-label">SYS-ENG / 001</span>
-                <span class="availability-dot"></span>
-                <span class="mono availability-text">Available for opportunities</span>
-            </div>
-
-            <h1 class="hero-name">Darrick Aaron<br>Untarman</h1>
-
-            <div class="hero-title-row">
-                <span class="hero-rule" aria-hidden="true"></span>
-                <p class="hero-title">IoT &amp; Systems Engineer</p>
-            </div>
-
-            <p class="hero-statement">
-                I build intelligent systems at the intersection of<br>
-                <strong>IoT, robotics, cloud computing, and applied AI.</strong>
-            </p>
-
-            <p class="hero-location mono">
-                <i class="ph ph-map-pin"></i>&ensp;Medan, Indonesia &nbsp;·&nbsp; Asia Pacific University
-            </p>
-
-            <div class="hero-cta">
-                <a href="#contact" class="btn-primary">Get in touch</a>
-                <a href="./download_file/Darrick_Aaron_Untarman_Resume.pdf" download class="btn-outline">
-                    <i class="ph ph-download-simple"></i> Download Resume
-                </a>
-            </div>
-        </div>
-
-        <div class="hero-aside" aria-hidden="true">
-            <div class="hero-aside-inner">
-                <div class="hero-stat">
-                    <span class="mono stat-num">05</span>
-                    <span class="stat-label">months internship</span>
-                </div>
-                <div class="hero-divider-h"></div>
-                <div class="hero-stat">
-                    <span class="mono stat-num">08</span>
-                    <span class="stat-label">engineering projects</span>
-                </div>
-                <div class="hero-divider-h"></div>
-                <div class="hero-stat">
-                    <span class="mono stat-num">10+</span>
-                    <span class="stat-label">certifications</span>
-                </div>
-            </div>
-            <div class="hero-scroll-hint">
-                <span class="mono">scroll</span>
-                <div class="scroll-line"></div>
-            </div>
-        </div>
+    <main class="home" id="home">
+        <section class="content">
+            <h1 data-aos="fade-down" data-aos-delay="300">Hi There!</h1>
+            <h2 data-aos="fade-down" data-aos-delay="300">I am <span class="name">Darrick Aaron Untarman</span></h2>
+            <p data-aos="fade-down" data-aos-delay="300">and an <span id="typewriter"></span></p>
+            <a href="#about" class="cta" data-aos="fade-down" data-aos-delay="300">Know more</a>
+        </section>
     </main>
 
-    <!-- ═══════════════════════════════════════
-         ABOUT
-    ═══════════════════════════════════════ -->
     <section class="about" id="about">
-        <div class="section-header">
-            <span class="mono section-index">§ 01</span>
-            <h2 class="section-title">About</h2>
+        <h2 data-aos="fade-down">About Me</h2>
+        <div class="content">
+            <div class="image" data-aos="fade-down">
+                <div class="id-card">
+                    <div class="card-face">
+                        <div class="card-strip"></div>
+                        <div class="card-header">
+                            <h4>ID Card</h4>
+                        </div>
+                        <div class="card-photo">
+                            <img src="./image/foto.jpg" alt="Profile Photo" class="photo">
+                        </div>
+                        <div class="card-info">
+                            <h5>Darrick Aaron Untarman</h5>
+                            <p>IoT Engineer</p>
+                        </div>
+                        <div class="card-divider"></div>
+                        <div class="card-tag">Asia Pacific University</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-content">
+                <p data-aos="fade-down">IoT-focused IT student with 5 months of experience as an IoT Engineer Intern, building end-to-end systems integrating embedded hardware, real-time data processing, and cloud platforms. Experienced in building full-stack IoT solutions using AWS Cloud, ROS 2, and embedded hardware to solve real-world problems through hackathons and projects. </p>
+                <a href="./download_file/Darrick_Aaron_Untarman_Resume.pdf" download class="cv" data-aos="fade-down">Download Resume <i class="ph-bold ph-download-simple"></i></a>
+            </div>
         </div>
 
-        <div class="about-grid">
-            <div class="about-photo-col">
-                <div class="about-photo-frame">
-                    <img src="./image/foto.jpg" alt="Darrick Aaron Untarman" class="about-photo">
-                    <div class="about-photo-label mono">DARRICK / IoT ENG</div>
+        <h3 data-aos="fade-down">Experience</h3>
+
+        <div class="timeline" data-aos="fade-down">
+            <div class="timeline-line"></div>
+            <div class="experience" data-aos="fade-down">
+                <div class="experience-circle" data-aos="fade-down"></div>
+                <div class="experience-content" data-aos="fade-down">
+                    <h4 data-aos="fade-down">Winner of AWS CendekiAwan Competition -- Digital Health Category</h4>
+                    <h5 data-aos="fade-down">AWS CendekiAwan Competition</h5>
+                    <p class="duration" data-aos="fade-down"><i class="ph ph-calendar-dots"></i> May 2026</p>
+                </div>
+            </div>
+            <div class="experience" data-aos="fade-down">
+                <div class="experience-circle" data-aos="fade-down"></div>
+                <div class="experience-content" data-aos="fade-down">
+                    <h4 data-aos="fade-down">Top 10 finalist in Malaysia</h4>
+                    <h5 data-aos="fade-down">AI Ready ASEAN Youth Challenge</h5>
+                    <p class="duration" data-aos="fade-down"><i class="ph ph-calendar-dots"></i> May 2026</p>
+                </div>
+            </div>
+            <div class="experience" data-aos="fade-down">
+                <div class="experience-circle" data-aos="fade-down"></div>
+                <div class="experience-content" data-aos="fade-down">
+                    <h4 data-aos="fade-down">HSIL Hackathon 7th Edition</h4>
+                    <h5 data-aos="fade-down">UCSI Hospital (CMET)</h5>
+                    <p class="duration" data-aos="fade-down"><i class="ph ph-calendar-dots"></i> April 2026</p>
+                </div>
+            </div>
+            <div class="experience" data-aos="fade-down">
+                <div class="experience-circle" data-aos="fade-down"></div>
+                <div class="experience-content" data-aos="fade-down">
+                    <h4 data-aos="fade-down">Top 10 AWS Hackathon Finalist -- Corporate Track</h4>
+                    <h5 data-aos="fade-down">Great Malaysia AI Hackathon 2025</h5>
+                    <p class="duration" data-aos="fade-down"><i class="ph ph-calendar-dots"></i> October 2025</p>
+                </div>
+            </div>
+            <div class="experience" data-aos="fade-down">
+                <div class="experience-circle" data-aos="fade-down"></div>
+                <div class="experience-content" data-aos="fade-down">
+                    <h4 data-aos="fade-down">IoT Engineer Intern</h4>
+                    <h5 data-aos="fade-down">Iotech Solutions</h5>
+                    <p class="duration" data-aos="fade-down"><i class="ph ph-calendar-dots"></i> June 2025 - November 2025</p>
                 </div>
             </div>
 
-            <div class="about-text-col">
-                <div class="about-lead">
-                    <p>IoT-focused IT student with hands-on experience as an <strong>IoT Engineer Intern</strong>, building end-to-end systems that connect embedded hardware, real-time data pipelines, and cloud infrastructure.</p>
-                </div>
-
-                <div class="about-body">
-                    <p>My work spans the full stack of connected systems — from low-level microcontroller firmware on ESP32 and Arduino, through communication protocols like MQTT and LoRa, to cloud orchestration on AWS and real-time dashboards in Grafana and InfluxDB.</p>
-                    <p>I'm particularly interested in autonomous systems and robotics, having built SLAM-navigated mobile robots with ROS 2 and integrated computer vision pipelines using YOLO for real-world inspection and logistics tasks.</p>
-                </div>
-
-                <div class="about-meta-grid">
-                    <div class="about-meta-item">
-                        <span class="mono meta-key">FIELD</span>
-                        <span class="meta-val">IoT · Embedded Systems · Cloud</span>
-                    </div>
-                    <div class="about-meta-item">
-                        <span class="mono meta-key">UNIVERSITY</span>
-                        <span class="meta-val">Asia Pacific University</span>
-                    </div>
-                    <div class="about-meta-item">
-                        <span class="mono meta-key">DEGREE</span>
-                        <span class="meta-val">BEng (Hons) Internet of Things</span>
-                    </div>
-                    <div class="about-meta-item">
-                        <span class="mono meta-key">STATUS</span>
-                        <span class="meta-val">Vice Chancellor's List — Academic Excellence</span>
-                    </div>
-                </div>
-
-                <a href="./download_file/Darrick_Aaron_Untarman_Resume.pdf" download class="btn-primary about-resume-btn">
-                    <i class="ph ph-download-simple"></i> Download Resume
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════
-         TECHNICAL EXPERTISE
-    ═══════════════════════════════════════ -->
-    <section class="expertise" id="expertise">
-        <div class="section-header">
-            <span class="mono section-index">§ 02</span>
-            <h2 class="section-title">Technical Expertise</h2>
-        </div>
-
-        <div class="expertise-grid">
-            <div class="expertise-category">
-                <div class="expertise-cat-head">
-                    <span class="mono cat-num">01</span>
-                    <h3>IoT &amp; Embedded Systems</h3>
-                </div>
-                <ul class="tech-list">
-                    <li><span class="mono dot">·</span> ESP32, Arduino, Raspberry Pi</li>
-                    <li><span class="mono dot">·</span> MQTT protocol</li>
-                    <li><span class="mono dot">·</span> LoRa E5 (long-range wireless)</li>
-                    <li><span class="mono dot">·</span> SHT31, JSN-SR04T, RFID (RC522)</li>
-                    <li><span class="mono dot">·</span> Servo motor control</li>
-                    <li><span class="mono dot">·</span> I2C, SPI communication</li>
-                </ul>
-            </div>
-
-            <div class="expertise-category">
-                <div class="expertise-cat-head">
-                    <span class="mono cat-num">02</span>
-                    <h3>Robotics &amp; Automation</h3>
-                </div>
-                <ul class="tech-list">
-                    <li><span class="mono dot">·</span> ROS 2 (Robot Operating System)</li>
-                    <li><span class="mono dot">·</span> SLAM navigation</li>
-                    <li><span class="mono dot">·</span> Autonomous mobile robots</li>
-                    <li><span class="mono dot">·</span> SolidWorks (3D design)</li>
-                    <li><span class="mono dot">·</span> NI LabVIEW simulation</li>
-                    <li><span class="mono dot">·</span> Servo & actuator control</li>
-                </ul>
-            </div>
-
-            <div class="expertise-category">
-                <div class="expertise-cat-head">
-                    <span class="mono cat-num">03</span>
-                    <h3>Cloud &amp; Infrastructure</h3>
-                </div>
-                <ul class="tech-list">
-                    <li><span class="mono dot">·</span> AWS (Bedrock Agent, Lambda)</li>
-                    <li><span class="mono dot">·</span> CloudFormation, CloudFront, S3</li>
-                    <li><span class="mono dot">·</span> API Gateway</li>
-                    <li><span class="mono dot">·</span> Firebase (Realtime Database)</li>
-                    <li><span class="mono dot">·</span> InfluxDB, Grafana</li>
-                    <li><span class="mono dot">·</span> Node-RED</li>
-                </ul>
-            </div>
-
-            <div class="expertise-category">
-                <div class="expertise-cat-head">
-                    <span class="mono cat-num">04</span>
-                    <h3>Artificial Intelligence</h3>
-                </div>
-                <ul class="tech-list">
-                    <li><span class="mono dot">·</span> AWS Bedrock Agent (GenAI)</li>
-                    <li><span class="mono dot">·</span> YOLOv8 object detection</li>
-                    <li><span class="mono dot">·</span> OpenCV (computer vision)</li>
-                    <li><span class="mono dot">·</span> Ultralytics pipeline</li>
-                    <li><span class="mono dot">·</span> Vision-based verification systems</li>
-                </ul>
-            </div>
-
-            <div class="expertise-category">
-                <div class="expertise-cat-head">
-                    <span class="mono cat-num">05</span>
-                    <h3>Software Development</h3>
-                </div>
-                <ul class="tech-list">
-                    <li><span class="mono dot">·</span> Python (Intermediate)</li>
-                    <li><span class="mono dot">·</span> JavaScript / HTML / CSS</li>
-                    <li><span class="mono dot">·</span> Java (OOP)</li>
-                    <li><span class="mono dot">·</span> PHP, SQL, MySQL</li>
-                    <li><span class="mono dot">·</span> Flutter (mobile)</li>
-                    <li><span class="mono dot">·</span> Git version control</li>
-                </ul>
-            </div>
-
-            <div class="expertise-category">
-                <div class="expertise-cat-head">
-                    <span class="mono cat-num">06</span>
-                    <h3>Tools &amp; Platforms</h3>
-                </div>
-                <ul class="tech-list">
-                    <li><span class="mono dot">·</span> VS Code, PyCharm, Android Studio</li>
-                    <li><span class="mono dot">·</span> Apache NetBeans</li>
-                    <li><span class="mono dot">·</span> Cisco Packet Tracer</li>
-                    <li><span class="mono dot">·</span> SQL Server Management Studio</li>
-                    <li><span class="mono dot">·</span> Git Bash</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════
-         SELECTED PROJECTS
-    ═══════════════════════════════════════ -->
-    <section class="projects" id="projects">
-        <div class="section-header">
-            <span class="mono section-index">§ 03</span>
-            <h2 class="section-title">Selected Projects</h2>
-        </div>
-
-        <!-- Project 01 — Full-width feature -->
-        <article class="project-feature">
-            <div class="project-feature-img">
-                <img src="./image/mediguard ai health.png" alt="MediGuard AI Health Platform">
-                <div class="project-num mono">01</div>
-            </div>
-            <div class="project-feature-content">
-                <div class="project-tags">
-                    <span class="tag mono">AWS Bedrock</span>
-                    <span class="tag mono">Serverless</span>
-                    <span class="tag mono">AI Health</span>
-                </div>
-                <h3 class="project-title">MediGuard — AI Health Platform</h3>
-                <div class="project-case">
-                    <div class="case-block">
-                        <span class="mono case-label">Problem</span>
-                        <p>Patients struggle to understand their vital signs and identify appropriate medical specialists for their conditions, leading to delayed or incorrect care decisions.</p>
-                    </div>
-                    <div class="case-block">
-                        <span class="mono case-label">Approach</span>
-                        <p>Built a fully serverless, AI-powered healthcare platform that accepts vital sign inputs and uses a Bedrock Agent to reason over diagnoses and recommend specialists.</p>
-                    </div>
-                    <div class="case-block">
-                        <span class="mono case-label">Implementation</span>
-                        <p>Deployed on AWS using Bedrock Agent, Lambda, API Gateway, S3, CloudFront, and CloudFormation for infrastructure-as-code. Frontend built in HTML, CSS, and JavaScript.</p>
-                    </div>
-                </div>
-                <div class="project-tech-row mono">
-                    AWS Bedrock Agent&ensp;·&ensp;Lambda&ensp;·&ensp;API Gateway&ensp;·&ensp;CloudFormation&ensp;·&ensp;S3&ensp;·&ensp;CloudFront
-                </div>
-            </div>
-        </article>
-
-        <!-- Project 02 — Alternating layout -->
-        <article class="project-alt project-alt-reverse">
-            <div class="project-alt-img">
-                <img src="./image/mediguard medicine.jpeg" alt="Medical Inventory Robot">
-                <div class="project-num mono">02</div>
-            </div>
-            <div class="project-alt-content">
-                <div class="project-tags">
-                    <span class="tag mono">ROS 2</span>
-                    <span class="tag mono">SLAM</span>
-                    <span class="tag mono">Computer Vision</span>
-                </div>
-                <h3 class="project-title">Autonomous Medical Inventory Robot</h3>
-                <div class="project-case">
-                    <div class="case-block">
-                        <span class="mono case-label">Problem</span>
-                        <p>Hospital pharmacy logistics involve repetitive, error-prone manual verification of medications and slow inventory tracking across large facilities.</p>
-                    </div>
-                    <div class="case-block">
-                        <span class="mono case-label">Implementation</span>
-                        <p>Built an autonomous mobile robot using ROS 2 and SLAM for self-navigation. Integrated a YOLOv8 vision pipeline for medication verification before dispensing. Connected to AWS for real-time cloud dashboard and inventory tracking.</p>
-                    </div>
-                </div>
-                <div class="project-tech-row mono">
-                    ROS 2&ensp;·&ensp;SLAM&ensp;·&ensp;YOLOv8&ensp;·&ensp;OpenCV&ensp;·&ensp;AWS Cloud&ensp;·&ensp;Arduino&ensp;·&ensp;Python&ensp;·&ensp;Servo Motor
-                </div>
-            </div>
-        </article>
-
-        <!-- Project 03 -->
-        <article class="project-alt">
-            <div class="project-alt-img">
-                <img src="./image/floodmonitoring.jpeg" alt="Flood Monitoring System">
-                <div class="project-num mono">03</div>
-            </div>
-            <div class="project-alt-content">
-                <div class="project-tags">
-                    <span class="tag mono">ESP32</span>
-                    <span class="tag mono">LoRa</span>
-                    <span class="tag mono">Firebase</span>
-                </div>
-                <h3 class="project-title">Real-Time Flood Monitoring System</h3>
-                <div class="project-case">
-                    <div class="case-block">
-                        <span class="mono case-label">Problem</span>
-                        <p>Remote flood-prone areas lack affordable, real-time environmental monitoring infrastructure for early warning systems.</p>
-                    </div>
-                    <div class="case-block">
-                        <span class="mono case-label">Implementation</span>
-                        <p>Deployed ESP32 nodes with SHT31 (temperature/humidity), rain gauges, and JSN-SR04T waterproof ultrasonic sensors. Used LoRa E5 for long-range, low-power transmission and Firebase for cloud storage. Built a Flutter dashboard for remote visualization.</p>
-                    </div>
-                </div>
-                <div class="project-tech-row mono">
-                    ESP32&ensp;·&ensp;LoRa E5&ensp;·&ensp;Firebase&ensp;·&ensp;Flutter&ensp;·&ensp;SHT31&ensp;·&ensp;JSN-SR04T&ensp;·&ensp;Arduino IDE
-                </div>
-            </div>
-        </article>
-
-        <!-- Projects grid — smaller projects -->
-        <div class="projects-secondary-grid">
-            <article class="project-card">
-                <div class="project-card-img">
-                    <img src="./image/rfid.jpeg" alt="RFID Attendance System">
-                    <span class="project-num mono">04</span>
-                </div>
-                <div class="project-card-body">
-                    <div class="project-tags">
-                        <span class="tag mono">ESP32</span>
-                        <span class="tag mono">RFID</span>
-                        <span class="tag mono">Google Sheets</span>
-                    </div>
-                    <h3 class="project-card-title">RFID Attendance System</h3>
-                    <p>Smart attendance system using ESP32 and RC522 RFID reader with Google Sheets as cloud storage. I2C LCD 16×2 provides real-time on-device feedback.</p>
-                    <div class="project-tech-row mono">ESP32&ensp;·&ensp;RC522&ensp;·&ensp;I2C LCD&ensp;·&ensp;Google Sheets&ensp;·&ensp;Arduino IDE</div>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-card-img">
-                    <img src="./image/smart dustbin.jpg" alt="Smart Dustbin">
-                    <span class="project-num mono">05</span>
-                </div>
-                <div class="project-card-body">
-                    <div class="project-tags">
-                        <span class="tag mono">Arduino</span>
-                        <span class="tag mono">Ultrasonic</span>
-                        <span class="tag mono">Servo</span>
-                    </div>
-                    <h3 class="project-card-title">Smart Dustbin — IoT</h3>
-                    <p>Proximity-triggered automatic lid using an ultrasonic distance sensor and servo motor. Demonstrates core embedded system design principles.</p>
-                    <div class="project-tech-row mono">Arduino&ensp;·&ensp;Ultrasonic Sensor&ensp;·&ensp;Servo Motor</div>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-card-img">
-                    <img src="./image/carwash.png" alt="Contactless Car Wash">
-                    <span class="project-num mono">06</span>
-                </div>
-                <div class="project-card-body">
-                    <div class="project-tags">
-                        <span class="tag mono">NI LabVIEW</span>
-                        <span class="tag mono">Automation</span>
-                    </div>
-                    <h3 class="project-card-title">Contactless Car Wash Simulation</h3>
-                    <p>Fully automated car wash sequence modeled and simulated in NI LabVIEW, demonstrating industrial control logic and state machine design.</p>
-                    <div class="project-tech-row mono">NI LabVIEW</div>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-card-img">
-                    <img src="./image/java-project.png" alt="POTS System">
-                    <span class="project-num mono">07</span>
-                </div>
-                <div class="project-card-body">
-                    <div class="project-tags">
-                        <span class="tag mono">Java</span>
-                        <span class="tag mono">OOP</span>
-                        <span class="tag mono">CRUD</span>
-                    </div>
-                    <h3 class="project-card-title">Procurement Order Tracking System</h3>
-                    <p>Admin role for POTS — built the login page and user management module with full CRUD operations using Java OOP techniques.</p>
-                    <div class="project-tech-row mono">Java&ensp;·&ensp;OOP Techniques&ensp;·&ensp;NetBeans</div>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-card-img">
-                    <img src="./image/tic-tac-toe.png" alt="Tic Tac Toe">
-                    <span class="project-num mono">08</span>
-                </div>
-                <div class="project-card-body">
-                    <div class="project-tags">
-                        <span class="tag mono">HTML</span>
-                        <span class="tag mono">CSS</span>
-                        <span class="tag mono">JavaScript</span>
-                    </div>
-                    <h3 class="project-card-title">Tic Tac Toe Game</h3>
-                    <p>Browser-based Tic Tac Toe with game state logic built in vanilla JavaScript. Deployed publicly on GitHub Pages.</p>
-                    <div class="project-tech-row mono">HTML&ensp;·&ensp;CSS&ensp;·&ensp;JavaScript</div>
-                    <a href="https://darr-02.github.io/Tic-Tac-Toe/tic-tac-toe-game.html" target="_blank" rel="noopener noreferrer" class="project-link">
-                        View on GitHub <i class="ph ph-arrow-square-out"></i>
-                    </a>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════
-         EXPERIENCE
-    ═══════════════════════════════════════ -->
-    <section class="experience" id="experience">
-        <div class="section-header">
-            <span class="mono section-index">§ 04</span>
-            <h2 class="section-title">Experience &amp; Achievements</h2>
-        </div>
-
-        <div class="timeline-wrap">
-            <div class="timeline-line" aria-hidden="true"></div>
-
-            <div class="timeline-item" data-type="award">
-                <div class="timeline-marker">
-                    <span class="mono marker-year">2026</span>
-                </div>
-                <div class="timeline-content">
-                    <span class="mono timeline-type">Award</span>
-                    <h3 class="timeline-role">Winner — Digital Health Category</h3>
-                    <p class="timeline-org">AWS CendekiAwan Competition</p>
-                    <p class="timeline-date mono">May 2026</p>
+            <div class="experience" data-aos="fade-down">
+                <div class="experience-circle" data-aos="fade-down"></div>
+                <div class="experience-content" data-aos="fade-down">
+                    <h4 data-aos="fade-down">Crew Member of APU Mega Career Fair 2025</h4>
+                    <h5 data-aos="fade-down">Asia Pacific University</h5>
+                    <p class="duration" data-aos="fade-down"><i class="ph ph-calendar-dots"></i> May 2025</p>
                 </div>
             </div>
 
-            <div class="timeline-item" data-type="award">
-                <div class="timeline-marker">
-                    <span class="mono marker-year">2026</span>
-                </div>
-                <div class="timeline-content">
-                    <span class="mono timeline-type">Award</span>
-                    <h3 class="timeline-role">Top 10 Finalist in Malaysia</h3>
-                    <p class="timeline-org">AI Ready ASEAN Youth Challenge</p>
-                    <p class="timeline-date mono">May 2026</p>
-                </div>
-            </div>
-
-            <div class="timeline-item" data-type="event">
-                <div class="timeline-marker">
-                    <span class="mono marker-year">2026</span>
-                </div>
-                <div class="timeline-content">
-                    <span class="mono timeline-type">Hackathon</span>
-                    <h3 class="timeline-role">HSIL Hackathon 7th Edition</h3>
-                    <p class="timeline-org">UCSI Hospital (CMET)</p>
-                    <p class="timeline-date mono">April 2026</p>
-                </div>
-            </div>
-
-            <div class="timeline-item" data-type="award">
-                <div class="timeline-marker">
-                    <span class="mono marker-year">2025</span>
-                </div>
-                <div class="timeline-content">
-                    <span class="mono timeline-type">Award</span>
-                    <h3 class="timeline-role">Top 10 Finalist — Corporate Track</h3>
-                    <p class="timeline-org">Great Malaysia AI Hackathon 2025</p>
-                    <p class="timeline-date mono">October 2025</p>
-                </div>
-            </div>
-
-            <div class="timeline-item" data-type="work">
-                <div class="timeline-marker">
-                    <span class="mono marker-year">2025</span>
-                </div>
-                <div class="timeline-content">
-                    <span class="mono timeline-type">Internship</span>
-                    <h3 class="timeline-role">IoT Engineer Intern</h3>
-                    <p class="timeline-org">Iotech Solutions</p>
-                    <p class="timeline-date mono">June 2025 — November 2025</p>
-                    <p class="timeline-desc">Built end-to-end IoT solutions integrating embedded hardware, real-time data processing, and cloud platforms across industrial applications.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item" data-type="event">
-                <div class="timeline-marker">
-                    <span class="mono marker-year">2025</span>
-                </div>
-                <div class="timeline-content">
-                    <span class="mono timeline-type">Volunteer</span>
-                    <h3 class="timeline-role">Crew Member — APU Mega Career Fair 2025</h3>
-                    <p class="timeline-org">Asia Pacific University</p>
-                    <p class="timeline-date mono">May 2025</p>
-                </div>
-            </div>
-
-            <div class="timeline-item" data-type="work">
-                <div class="timeline-marker">
-                    <span class="mono marker-year">2024</span>
-                </div>
-                <div class="timeline-content">
-                    <span class="mono timeline-type">Part-time</span>
-                    <h3 class="timeline-role">Technical Assistant Trainee</h3>
-                    <p class="timeline-org">Asia Pacific University</p>
-                    <p class="timeline-date mono">October 2024 — December 2024</p>
+            <div class="experience" data-aos="fade-down">
+                <div class="experience-circle" data-aos="fade-down"></div>
+                <div class="experience-content" data-aos="fade-down">
+                    <h4 data-aos="fade-down">Technical Assistant Trainee</h4>
+                    <h5 data-aos="fade-down">Asia Pacific University</h5>
+                    <p class="duration" data-aos="fade-down"><i class="ph ph-calendar-dots"></i> October 2024 - December 2024</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ═══════════════════════════════════════
-         CERTIFICATIONS
-    ═══════════════════════════════════════ -->
-    <section class="certifications" id="certifications">
-        <div class="section-header">
-            <span class="mono section-index">§ 05</span>
-            <h2 class="section-title">Certifications</h2>
+    <section class="skill" id="skill">
+        <h2 data-aos="fade-down">Skills</h2>
+        <div class="tabs" data-aos="fade-down">
+            <div class="tab active" onclick="showContent('skills')">Skills</div>
+            <div class="tab" onclick="showContent('tools')">Tools</div>
+            <div class="tab" onclick="showContent('certi')">Certification</div>
         </div>
-
-        <div class="cert-grid">
-
-            <div class="cert-row">
-                <div class="cert-item">
-                    <div class="cert-thumb">
-                        <img src="./download_file/cendekiawan.jpeg" alt="AWS CendekiaAwan">
-                    </div>
-                    <div class="cert-info">
-                        <h3 class="cert-name">AWS CendekiAwan Competition</h3>
-                        <p class="cert-issuer mono">Amazon Web Services</p>
-                        <p class="cert-date mono">May 2026</p>
+        <div id="skills" class="section active">
+            <div class="container" data-aos="fade-down">
+                <div class="content">
+                    <img src="./image/python.png" class="skill-img">
+                    <h3>Python</h3>
+                    <p>-- Intermediate --</p>
+                </div>
+                <div class="content">
+                    <img src="./image/java.png" class="skill-img">
+                    <h3>Java</h3>
+                    <p>-- Basic --</p>
+                </div>
+                <div class="content">
+                    <img src="./image/arduino.png" class="skill-img">
+                    <h3>Arduino</h3>
+                    <p>-- Intermediate --</p>
+                </div>
+                <div class="content">
+                    <img src="./image/aws.png" class="skill-img">
+                    <h3>AWS Cloud</h3>
+                    <p>-- Intermediate --</p>
+                </div>
+                <div class="content">
+                    <img src="./image/css-3.png" class="skill-img">
+                    <h3>CSS</h3>
+                    <p>-- Intermediate --</p>
+                </div>
+                <div class="content">
+                    <img src="./image/html.png" class="skill-img">
+                    <h3>HTML</h3>
+                    <p>-- Intermediate --</p>
+                </div>
+                <div class="content">
+                    <img src="./image/java-script.png" class="skill-img">
+                    <h3>JavaScript</h3>
+                    <p>-- Intermediate --</p>
+                </div>
+                <div class="content">
+                    <img src="./image/mysql.png" class="skill-img">
+                    <h3>SQL</h3>
+                    <p>-- Basic --</p>
+                </div>
+                <div class="content">
+                    <img src="./image/php.png" class="skill-img">
+                    <h3>PHP</h3>
+                    <p>-- Basic --</p>
+                </div>
+                <div class="content">
+                    <img src="./image/flutter.png" class="skill-img">
+                    <h3>Flutter</h3>
+                    <p>-- Basic --</p>
+                </div>
+                <div class="content">
+                    <img src="./image/raspberryPi.png" class="skill-img">
+                    <h3>Raspberry Pi</h3>
+                    <p>-- Basic --</p>
+                </div>
+                <div class="content">
+                    <img src="./image/yolo.png" class="skill-img" style="width:100px; height:50px;">
+                    <h3>Ultralytics YOLO</h3>
+                    <p>-- Basic --</p>
+                </div>
+                <div class="content">
+                    <img src="./image/mqtt.png" class="skill-img" style="width:100px; height:50px;">
+                    <h3>MQTT</h3>
+                    <p>-- Intermediate --</p>
+                </div>
+                <div class="content">
+                    <img src="./image/ros2.png" class="skill-img" style="width:100px; height:50px;">
+                    <h3>SLAM ROS2</h3>
+                    <p>-- Intermediate --</p>
+                </div>
+                
+            </div>
+        </div>
+        <div id="tools" class="section">
+            <div class="container">
+                <div class="content">
+                    <img src="./image/vsc.png" class="tool-img">
+                    <h3>Visual Studio Code</h3>
+                </div>
+                <div class="content">
+                    <img src="./image/vs.png" class="tool-img">
+                    <h3>Visual Studio</h3> 
+                </div>
+                <div class="content">
+                    <img src="./image/netbeans.png" class="tool-img">
+                    <h3>Apache Netbeans</h3>
+                </div>
+                <div class="content">
+                    <img src="./image/sql.png" class="tool-img">
+                    <h3>SQL Server Management</h3>
+                </div>
+                <div class="content">
+                    <img src="./image/solidworks.png" class="tool-img">
+                    <h3>SolidWorks</h3>
+                </div>
+                <div class="content">
+                    <img src="./image/firebase.png" class="tool-img">
+                    <h3>Firebase</h3>
+                </div>
+                <div class="content">
+                    <img src="./image/androidstudio.png" class="tool-img">
+                    <h3>Android Studio</h3>
+                </div>
+                <div class="content">
+                    <img src="./image/Cisco-Packet-Tracer.png" class="tool-img">
+                    <h3>Cisco Packet Tracer</h3>
+                </div>
+                <div class="content">
+                    <img src="./image/pycharm.png" class="tool-img">
+                    <h3>PyCharm</h3>
+                </div>
+                <div class="content">
+                    <img src="./image/gitbash.png" class="tool-img">
+                    <h3>Git Bash</h3>
+                </div>
+                <div class="content">
+                    <img src="./image/node-RED.png" class="tool-img">
+                    <h3>Node-RED</h3>
+                </div>
+                <div class="content">
+                    <img src="./image/ros2.png" class="tool-img">
+                    <h3>ROS 2</h3>
+                </div>
+                <div class="content">
+                    <img src="./image/grafana.png" class="tool-img">
+                    <h3>Grafana</h3>
+                </div>
+                <div class="content">
+                    <img src="./image/influxdb.png" class="tool-img">
+                    <h3>Influx DB</h3>
+                </div>
+            </div>
+        </div>
+        <div id="certi" class="section">
+            <div class="container">
+                <div class="content">
+                    <img src="./download_file/cendekiawan.jpeg" class="cert">
+                    <h3>AWS CendekiaAwan Competition</h3>
+                </div>
+                <div class="content">
+                    <img src="./download_file/ai ready asean challenge.png" class="cert">
+                    <h3>AI Ready ASEAN Youth Challenge</h3>
+                    <div>
+                        <a href="https://www.virtualbadge.io/certificate-validator?credential=f7913532-6d03-4025-a42a-489791cb4038" target="_blank" class="open"><i class="ph-fill ph-arrow-square-out"></i></a>
                     </div>
                 </div>
-
-                <div class="cert-item">
-                    <div class="cert-thumb">
-                        <img src="./download_file/ai ready asean challenge.png" alt="AI Ready ASEAN">
-                    </div>
-                    <div class="cert-info">
-                        <h3 class="cert-name">AI Ready ASEAN Youth Challenge</h3>
-                        <p class="cert-issuer mono">AI Ready ASEAN</p>
-                        <p class="cert-date mono">May 2026</p>
-                        <a href="https://www.virtualbadge.io/certificate-validator?credential=f7913532-6d03-4025-a42a-489791cb4038" target="_blank" rel="noopener noreferrer" class="cert-verify mono">
-                            Verify credential <i class="ph ph-arrow-square-out"></i>
-                        </a>
+                <div class="content">
+                    <img src="./download_file/AiSingapore.png" class="cert">
+                    <h3>AI Singapore</h3>
+                    <div>
+                        <a href="https://certificates.aisingapore.org/certificate-verification/1274FBF58-1274FBEF7-1274058C6/" target="_blank" class="open"><i class="ph-fill ph-arrow-square-out"></i></a>
                     </div>
                 </div>
-
-                <div class="cert-item">
-                    <div class="cert-thumb">
-                        <img src="./download_file/AiSingapore.png" alt="AI Singapore">
+                <div class="content">
+                    <img src="./download_file/amcf.png" class="cert">
+                    <h3>Crew Member of APU Mega Career Fair 2025</h3>
+                    <div>
+                        <a href="https://www.credly.com/badges/40871e6c-cc42-4c53-8778-455a3e8d2ce0/linked_in_profile" target="_blank" class="open"><i class="ph-fill ph-arrow-square-out"></i></a>
                     </div>
-                    <div class="cert-info">
-                        <h3 class="cert-name">AI Singapore Certificate</h3>
-                        <p class="cert-issuer mono">AI Singapore</p>
-                        <a href="https://certificates.aisingapore.org/certificate-verification/1274FBF58-1274FBEF7-1274058C6/" target="_blank" rel="noopener noreferrer" class="cert-verify mono">
-                            Verify credential <i class="ph ph-arrow-square-out"></i>
-                        </a>
+                </div>
+                <div class="content">
+                    <img src="./download_file/aws_academy.png" class="cert">
+                    <h3>AWS Academy Graduate - Cloud Architecting - Training Badge</h3>
+                    <div>
+                        <a href="https://www.credly.com/badges/6515ee20-32b8-408b-8dea-dc379a3b6585" target="_blank" class="open"><i class="ph-fill ph-arrow-square-out"></i></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="./download_file/networksecurity.png" class="cert">
+                    <h3>Network Security</h3>
+                    <div>
+                        <a href="https://www.credly.com/badges/f27aeba9-7e79-4cb3-88e0-e9f7c32cef44/linked_in_profile" target="_blank" class="open"><i class="ph-fill ph-arrow-square-out"></i></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="./download_file/iot.png" class="cert">
+                    <h3>Introduction to IoT</h3>
+                    <div>
+                        <a href="https://www.credly.com/badges/cc891aa0-8a21-4f83-a442-837d25759251/linked_in_profile" target="_blank" class="open"><i class="ph-fill ph-arrow-square-out"></i></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="./download_file/js.png" class="cert">
+                    <h3>JavaScript Essential 1</h3>
+                    <div>
+                        <a href="https://www.credly.com/badges/dbc9676f-b4dc-4a0f-8494-f8e9622d28b7/linked_in_profile" target="_blank" class="open"><i class="ph-fill ph-arrow-square-out"></i></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="./download_file/networking.jpg" class="cert">
+                    <h3>Introduction to Networking</h3>
+                    <div>
+                        <a href="https://www.credly.com/badges/f70396fa-7b5b-4972-a163-9f9765a52ca8" target="_blank" class="open"><i class="ph-fill ph-arrow-square-out"></i></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="./download_file/vice_chancellor.jpg" class="cert">
+                    <h3>Vice Chancellor's List for Academic Excellence</h3>
+                </div>
+                
+            </div>
+        </div>
+    </section>  
+
+    <section class="project" id="project">
+        <h2 data-aos="fade-down">Projects</h2>
+        <div class="container swiper" data-aos="fade-down">
+            <div class="sub-container swiper-wrapper">
+                <div class="swiper-slide project-content">
+                    <img src="./image/mediguard ai health.png" class="img">
+                    <div class="sub-content">
+                        <h3>MediGuard -- AI Health Platform</h3>
+                        <p>Developed an AI-powered healthcare platform that analyzes vital signs, predicts possible diagnoses, and recommends suitable medical specialists.</p>
+                        <p class="tool">Tools: AWS (Bedrock Agent, CloudFormation, CloudFront, S3, Lambda, API Gateway), HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+                <div class="swiper-slide project-content">
+                    <img src="./image/mediguard medicine.jpeg" class="img">
+                    <div class="sub-content">
+                        <h3>Medical Inventory System</h3>
+                        <p>Developed an autonomous mobile robot integrating ROS 2, SLAM, and AWS for real-time inventory tracking and hospital logistics. Built a cloud dashboard and an AI-assisted YOLO-based vision system to verify medication before dispensing.</p>
+                        <p class="tool">Tools: YOLOv8, Servo Motor, AWS Cloud, Arduino, Python, ROS2, SLAM, OpenCV</p>
+                    </div>
+                </div>
+                <div class="swiper-slide project-content">
+                    <img src="./image/floodmonitoring.jpeg" class="img">
+                    <div class="sub-content">
+                        <h3>Flood Monitoring System</h3>
+                        <p>Built a real-time environmental monitoring system using ESP32, LoRa, and Firebase with a Flutter dashboard. Enabled remote tracking of temperature, rainfall, and water levels for early flood detection.</p>
+                        <p class="tool">Tools: ESP32, LoRa E5, Firebase, Flutter, Arduino, SHT31, Buzzer, Rain Gauge, JSN-SR04T (waterproof ultrasonic sensor)</p>
+                    </div>
+                </div>
+                <div class="swiper-slide project-content">
+                    <img src="./image/rfid.jpeg" class="img">
+                    <div class="sub-content">
+                        <h3>RFID Based Attendance System</h3>
+                        <p>Smart Attendance System using ESP32 as the microcontroller and store the data into Google Sheets as the cloud storage. Used RC522 as the RFID reader and an I2C LCD 16x2 as the display.</p>
+                        <p class="tool">Tools: Arduino IDE, ESP32, RFID reader & tag, I2C LCD 16x2, Google Sheets</p>
+                    </div>
+                </div>
+                <div class="swiper-slide project-content">
+                    <img src="./image/smart dustbin.jpg" class="img">
+                    <div class="sub-content">
+                        <h3>Smart Dustbin IoT Project</h3>
+                        <p>An IoT project that utilize sensor to measure the object distance and servo motor to control the lid.</p>
+                        <p class="tool">Tools: Arduino IDE, Ultrasonic Sensor, Servo Motor</p>
+                    </div>
+                </div>
+                <div class="swiper-slide project-content">
+                    <img src="./image/tic-tac-toe.png" class="img">
+                    <div class="sub-content">
+                        <h3>Tic Tac Toe Game</h3>
+                        <p>I am building a tic tac toe game using html, css, and javascript.</p>
+                        <a target="_blank" href="https://darr-02.github.io/Tic-Tac-Toe/tic-tac-toe-game.html" class="view">View on GitHub <i class="ph ph-arrow-square-out"></i></a>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide project-content">
+                    <img src="./image/carwash.png" class="img">
+                    <div class="sub-content">
+                        <h3>Contactless Car Wash System</h3>
+                        <p>Using NI LabView Software to simulate the automatic car wash system.</p>
+                        <p class="tool">Tools: NI LabView</p>
+                    </div>
+                </div>
+                <div class="swiper-slide project-content">
+                    <img src="./image/java-project.png" class="img">
+                    <div class="sub-content">
+                        <h3>Procurement Order Tracking System (POTS)</h3>
+                        <p>In this project, I am handling the admin role which is creating login page and user registration page. In user registration, I am using CRUD method such as create new user, view user data, edit user data, and delete existing user.</p>
+                        <p class="tool">Tools: Java OOP Techniques</p>
                     </div>
                 </div>
             </div>
-
-            <div class="cert-row">
-                <div class="cert-item">
-                    <div class="cert-thumb">
-                        <img src="./download_file/aws_academy.png" alt="AWS Academy">
-                    </div>
-                    <div class="cert-info">
-                        <h3 class="cert-name">AWS Academy — Cloud Architecting</h3>
-                        <p class="cert-issuer mono">Amazon Web Services</p>
-                        <a href="https://www.credly.com/badges/6515ee20-32b8-408b-8dea-dc379a3b6585" target="_blank" rel="noopener noreferrer" class="cert-verify mono">
-                            Verify on Credly <i class="ph ph-arrow-square-out"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="cert-item">
-                    <div class="cert-thumb">
-                        <img src="./download_file/networksecurity.png" alt="Network Security">
-                    </div>
-                    <div class="cert-info">
-                        <h3 class="cert-name">Network Security</h3>
-                        <p class="cert-issuer mono">Cisco Networking Academy</p>
-                        <a href="https://www.credly.com/badges/f27aeba9-7e79-4cb3-88e0-e9f7c32cef44/linked_in_profile" target="_blank" rel="noopener noreferrer" class="cert-verify mono">
-                            Verify on Credly <i class="ph ph-arrow-square-out"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="cert-item">
-                    <div class="cert-thumb">
-                        <img src="./download_file/iot.png" alt="Intro to IoT">
-                    </div>
-                    <div class="cert-info">
-                        <h3 class="cert-name">Introduction to IoT</h3>
-                        <p class="cert-issuer mono">Cisco Networking Academy</p>
-                        <a href="https://www.credly.com/badges/cc891aa0-8a21-4f83-a442-837d25759251/linked_in_profile" target="_blank" rel="noopener noreferrer" class="cert-verify mono">
-                            Verify on Credly <i class="ph ph-arrow-square-out"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cert-row">
-                <div class="cert-item">
-                    <div class="cert-thumb">
-                        <img src="./download_file/js.png" alt="JavaScript Essentials">
-                    </div>
-                    <div class="cert-info">
-                        <h3 class="cert-name">JavaScript Essentials 1</h3>
-                        <p class="cert-issuer mono">Cisco Networking Academy</p>
-                        <a href="https://www.credly.com/badges/dbc9676f-b4dc-4a0f-8494-f8e9622d28b7/linked_in_profile" target="_blank" rel="noopener noreferrer" class="cert-verify mono">
-                            Verify on Credly <i class="ph ph-arrow-square-out"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="cert-item">
-                    <div class="cert-thumb">
-                        <img src="./download_file/networking.jpg" alt="Intro to Networking">
-                    </div>
-                    <div class="cert-info">
-                        <h3 class="cert-name">Introduction to Networking</h3>
-                        <p class="cert-issuer mono">Cisco Networking Academy</p>
-                        <a href="https://www.credly.com/badges/f70396fa-7b5b-4972-a163-9f9765a52ca8" target="_blank" rel="noopener noreferrer" class="cert-verify mono">
-                            Verify on Credly <i class="ph ph-arrow-square-out"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="cert-item">
-                    <div class="cert-thumb">
-                        <img src="./download_file/amcf.png" alt="APU Career Fair">
-                    </div>
-                    <div class="cert-info">
-                        <h3 class="cert-name">Crew — APU Mega Career Fair 2025</h3>
-                        <p class="cert-issuer mono">Asia Pacific University</p>
-                        <a href="https://www.credly.com/badges/40871e6c-cc42-4c53-8778-455a3e8d2ce0/linked_in_profile" target="_blank" rel="noopener noreferrer" class="cert-verify mono">
-                            Verify on Credly <i class="ph ph-arrow-square-out"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cert-row cert-row-single">
-                <div class="cert-item cert-item-highlight">
-                    <div class="cert-thumb">
-                        <img src="./download_file/vice_chancellor.jpg" alt="Vice Chancellor's List">
-                    </div>
-                    <div class="cert-info">
-                        <h3 class="cert-name">Vice Chancellor's List — Academic Excellence</h3>
-                        <p class="cert-issuer mono">Asia Pacific University</p>
-                        <p class="cert-date mono">Academic recognition for outstanding GPA performance</p>
-                    </div>
-                </div>
-            </div>
-
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </section>
 
-    <!-- ═══════════════════════════════════════
-         CONTACT
-    ═══════════════════════════════════════ -->
-    <section class="contact" id="contact">
-        <div class="contact-inner">
-            <div class="contact-left">
-                <span class="mono section-index">§ 06</span>
-                <h2 class="contact-heading">Let's build<br>something<br><em>together.</em></h2>
-                <p class="contact-sub">Open to full-time roles, internships, research collaborations, and project consultations in IoT, embedded systems, and cloud-connected engineering.</p>
-            </div>
-
-            <div class="contact-right">
-                <div class="contact-link-group">
-                    <a href="mailto:darrickuntarman@gmail.com" class="contact-link">
-                        <span class="mono contact-link-label">Email</span>
-                        <span class="contact-link-val">darrickuntarman@gmail.com <i class="ph ph-arrow-up-right"></i></span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/darrick-aaron-untarman-60550b2b9/" target="_blank" rel="noopener noreferrer" class="contact-link">
-                        <span class="mono contact-link-label">LinkedIn</span>
-                        <span class="contact-link-val">darrick-aaron-untarman <i class="ph ph-arrow-up-right"></i></span>
-                    </a>
-                    <a href="https://github.com/Darr-02" target="_blank" rel="noopener noreferrer" class="contact-link">
-                        <span class="mono contact-link-label">GitHub</span>
-                        <span class="contact-link-val">Darr-02 <i class="ph ph-arrow-up-right"></i></span>
-                    </a>
-                    <a href="https://www.instagram.com/darrickuntarman" target="_blank" rel="noopener noreferrer" class="contact-link">
-                        <span class="mono contact-link-label">Instagram</span>
-                        <span class="contact-link-val">@darrickuntarman <i class="ph ph-arrow-up-right"></i></span>
-                    </a>
-                    <div class="contact-link contact-link-static">
-                        <span class="mono contact-link-label">Phone</span>
-                        <span class="contact-link-val">+62 853 7383 8351</span>
-                    </div>
-                    <div class="contact-link contact-link-static">
-                        <span class="mono contact-link-label">Location</span>
-                        <span class="contact-link-val">Medan, Indonesia</span>
-                    </div>
+    <section id="contact" class="contact">
+        <h2 data-aos="fade-down">Contact Me!</h2>
+        <div class="contact-cards" data-aos="fade-down">
+            <div class="contact-card">
+                <div class="contact-icon-wrap">
+                    <i class="ph ph-map-pin"></i>
                 </div>
+                <p class="contact-label">Location</p>
+                <p class="contact-value">Medan, Indonesia</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon-wrap">
+                    <i class="ph ph-phone"></i>
+                </div>
+                <p class="contact-label">Phone</p>
+                <p class="contact-value">+6285373838351</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon-wrap">
+                    <i class="ph ph-envelope"></i>
+                </div>
+                <p class="contact-label">Email</p>
+                <p class="contact-value">
+                    <a href="mailto:darrickuntarman@gmail.com">darrickuntarman@gmail.com</a>
+                </p>
             </div>
         </div>
     </section>
-
-    <!-- ═══════════════════════════════════════
-         FOOTER
-    ═══════════════════════════════════════ -->
     <footer>
-        <div class="footer-inner">
-            <span class="footer-name mono">Darrick Aaron Untarman</span>
-            <nav class="footer-nav" aria-label="Footer navigation">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#expertise">Expertise</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <p class="footer-credit mono">&copy; <span id="year"></span> — All rights reserved</p>
+        <div class="social">
+            <a href="https://www.instagram.com/darrickuntarman" target="_blank" rel="noopener noreferrer"><i class="ph ph-instagram-logo"></i></a>
+            <a href="https://www.linkedin.com/in/darrick-aaron-untarman-60550b2b9/" target="_blank" rel="noopener noreferrer"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="https://github.com/Darr-02" target="_blank" rel="noopener noreferrer"><i class="ph ph-github-logo"></i></a>
+        </div>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About me</a>
+            <a href="#skill">Skill</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="credit">
+            <p>&copy; <span id="year"></span> <a href="#">Darrick</a>. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <!-- Icon -->
+    <script>
+        AOS.init();     
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./file.js"></script>
 </body>
 </html>
