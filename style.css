@@ -756,7 +756,7 @@ ul li a:hover::after{
 }
  
 #tools .container {
-    margin-left: 0;
+    margin: 0 auto;
     padding-bottom: 0;
     display: flex;
     justify-content: center;
@@ -833,7 +833,7 @@ ul li a:hover::after{
 }
  
 #certi .container {
-    margin-left: 0;
+    margin: 0 auto;
     padding-bottom: 0;
     gap: 20px;
 }
